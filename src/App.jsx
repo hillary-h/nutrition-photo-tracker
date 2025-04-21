@@ -26,9 +26,10 @@ function App() {
         <input placeholder="盐分 (g)" type="number" value={meal.salt} onChange={(e) => setMeal({ ...meal, salt: e.target.value })} /><br/>
         <input placeholder="糖分 (g)" type="number" value={meal.sugar} onChange={(e) => setMeal({ ...meal, sugar: e.target.value })} /><br/>
         <button onClick={handleAddMeal}>添加</button>
-        <button style={{ marginLeft: 10 }} onClick={() => window.open("https://chat.openai.com/g/g-Fgys35Irw-nutrition-photo-assist", "_blank")}>
-          📸 拍照识别
-        </button>
+        <button
+          style={{ marginLeft: 10 }}
+          onClick={() => window.open("https://chatgpt.com/g/g-680644da072481919382f6ef04abe00d-nutrition", "_blank")}
+        >📸 拍照识别</button>
       </div>
 
       <div style={{ background: '#eee', padding: 10 }}>
